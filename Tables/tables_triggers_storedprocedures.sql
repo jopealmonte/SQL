@@ -1,6 +1,5 @@
-CREATE TABLE tabla_prueba (Idnum VARCHAR(20), productÑservice VARCHAR(20), Name VARCHAR(20))
+CREATE TABLE tabla_prueba (Idnum VARCHAR(20), productOservice VARCHAR(20), Name VARCHAR(20))
 
-# Faltan crear otras tablas acá 
+CREATE TABLE tabla_trigger_afterdelete (IdnumViejo VARCHAR(20), IdnumNuevo VARCHAR(20), productOserviceViejo VARCHAR(20),productOserviceNuevo VARCHAR(20), Name VARCHAR(20) ) 
 
-CREATE TRIGGER elimination_trigger_afterdelete AFTER DELETE ON tabla_prueba FOR EACH ROW 
-INSERT INTO 
+CREATE TABLE tabla_trigger_beforedelete (Idnum VARCHAR(20), productOservice VARCHAR(20), Name VARCHAR(20))
